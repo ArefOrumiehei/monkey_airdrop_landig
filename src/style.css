@@ -1,18 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+  margin: 0;
+}
+
+* {
+  min-height: 0;
+  min-width: 0;
+  outline: none;
+  font-family: "Inter", serif;
+
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
+}
+
 body {
   background-color: #171717;
   margin: 0;
 }
 
-.container {
-
-}
-
-.header {
-  border-bottom-width: 1px;
-  border-color: #3d3d3d;
-}
-
-.header div {
+header div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,15 +47,15 @@ body {
   width: 100%;
 }
 
-.header div .btns {
+header div .btns {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 8px;
   margin-left: auto;
-
 }
 
-.header div .btns .headerBtns {
+header div .btns .headerBtns {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,8 +70,247 @@ body {
   outline-style: solid;
   color: #9c9c9c;
   font-weight: 500;
-  font-size: .875rem;
+  font-size: 0.875rem;
   padding-left: 10px;
   padding-right: 10px;
   text-decoration: inherit;
+}
+
+header div .btns #flokiBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #242424;
+  border-width: 1px;
+  border-color: transparent;
+  border-radius: 10px;
+  height: 40px;
+  outline-offset: 2px;
+  outline-width: 0;
+  outline-style: solid;
+  color: #ff8547;
+  background-color: rgba(255, 145, 71, 0.102);
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: inherit;
+}
+
+.claim-content {
+  padding: 108px 16px 76px 16px;
+  position: relative;
+  max-width: 1216px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.claim-content .img1 {
+  color: transparent;
+  position: absolute;
+  top: 130px;
+  left: 10%;
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+}
+
+.claim-content .img2 {
+  color: transparent;
+  position: absolute;
+  top: 218px;
+  right: 10%;
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+}
+
+.claim-content .img3 {
+  color: transparent;
+  position: absolute;
+  bottom: 80px;
+  left: 12%;
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+}
+
+.claim-bg-circles {
+  mask-image: linear-gradient(180deg, #000 40%, transparent);
+  transform: translate(-50%, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+  width: 1074px;
+  height: 1074px;
+  z-index: 1;
+  position: absolute;
+  top: 64px;
+  left: 50%;
+}
+
+.claim-bg-circles div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.claim-bg-circles div .circle-one {
+  border: 1px solid #242424;
+  border-radius: 9999px;
+  width: 556px;
+  height: 556px;
+  transform: translate(-50%, -50%) rotate(0) skewX(0) skewY(0) scaleX(1)
+    scaleY(1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.claim-bg-circles div .circle-two {
+  border: 1px solid #242424;
+  border-radius: 9999px;
+  width: 679px;
+  height: 679px;
+  transform: translate(-50%, -50%) rotate(0) skewX(0) skewY(0) scaleX(1)
+    scaleY(1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.claim-bg-circles div .circle-three {
+  border: 1px solid #242424;
+  border-radius: 9999px;
+  width: 796px;
+  height: 796px;
+  transform: translate(-50%, -50%) rotate(0) skewX(0) skewY(0) scaleX(1)
+    scaleY(1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.claim-bg-circles div .circle-four {
+  border: 1px solid #242424;
+  border-radius: 9999px;
+  width: 930px;
+  height: 930px;
+  transform: translate(-50%, -50%) rotate(0) skewX(0) skewY(0) scaleX(1)
+    scaleY(1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.claim-bg-circles div .circle-five {
+  border: 1px solid #242424;
+  border-radius: 9999px;
+  width: 1074px;
+  height: 1074px;
+  transform: translate(-50%, -50%) rotate(0) skewX(0) skewY(0) scaleX(1)
+    scaleY(1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.claim-content .claim-text .airdrop-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#airdrop-checker {
+  font-weight: 500;
+  font-size: 0.688rem;
+  line-height: 1.09;
+  color: rgb(204 204 204/1);
+  letter-spacing: 0.02em inherit;
+  text-transform: uppercase;
+  padding: 2px 8px 2px 8px;
+  background-color: #99a0ae3d;
+  border-radius: 9999px;
+  text-align: center;
+}
+
+.claim-content .claim-text div h1 {
+  font-weight: 500;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em inherit;
+  text-align: center;
+  max-width: 640px;
+  margin-top: 24px;
+  color: #fff;
+}
+
+.claim-content .claim-text div p {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  letter-spacing: -0.015em inherit;
+  text-align: center;
+  max-width: 524px;
+  margin-top: 24px;
+  color: #9c9c9c;
+}
+
+.input-container {
+  width: 100%;
+  margin-top: 32px;
+  max-width: 42rem;
+  padding: 20px;
+  border-radius: 24px;
+  border-width: 1px;
+  border-color: #3d3d3d;
+  max-width: 672px;
+  box-shadow: 0px 0px 3px 1px #171717;
+  outline-width: 2px;
+}
+
+.grid-input {
+  display: grid;
+  grid-template-columns: 4fr auto;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.input-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 4px;
+  border: 1px solid #3d3d3d;
+  border-radius: 10px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.input-section input {
+  padding-left: 40px;
+  padding-right: 12px;
+  background-color: #171717;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+}
+
+.input-section-btn {
+  height: 40px;
+  color: rgb(255 255 255/1);
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.42;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ff8547;
+  border-radius: 10px;
+  cursor: pointer;
 }
