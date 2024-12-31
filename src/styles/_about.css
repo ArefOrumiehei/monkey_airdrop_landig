@@ -1,0 +1,85 @@
+@import url('./colors.css');
+
+#about {
+    background-repeat: no-repeat;
+    background-image: url('../assets/images/asset 9.png');
+    background-position: 50%;
+    background-size: cover;
+}
+
+#about .max-w-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about .content-wrapper {
+    padding: 8rem 1rem;
+}
+
+#about .w-full {
+    width: 100%;
+}
+
+#about .max-w-\[605px\] {
+    max-width: 605px;
+}
+
+#about .monkey-icon {
+    width: 326px;
+    height: 40px;
+    color: transparent;
+}
+
+#about .size-14 {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+#about .section-title {
+    color: var(--color-white);
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.33;
+    margin-top: 2rem;
+    line-height: 1.2;
+}
+
+#about .section-description {
+    color: var(--color-white);
+    display: block;
+    font-size: 1rem;
+    letter-spacing: -0.011em;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+}
+
+#about .section-button {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    line-height: 1.42;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    gap: 0.5rem;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    padding: 0 0.625rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    width: fit-content;
+    outline: none;
+    outline-offset: 2px;
+}
+
+#about .section-button:hover {
+    background-color: var(--color-white);
+    color: var(--color-orange);
+}
+
+#about .section-button:focus-visible {
+    outline: 2px solid var(--information-light);
+}
